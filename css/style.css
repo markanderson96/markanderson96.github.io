@@ -114,6 +114,7 @@ main {
         margin: 0;
     }
 }
+
 @media only screen and (min-width: 600px) {
     .navbar {
         width: 5rem;
@@ -125,6 +126,6 @@ main {
     }
     .navbar:hover .link-text {
         display: inline;
-        transition: var(--transition-speed);
+        transition: var(--transition-speed) * 2;
     }
 }
