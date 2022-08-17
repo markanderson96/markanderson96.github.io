@@ -6,6 +6,7 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 500ms;
+    --text-transition-speed: 2000ms;
 
 }
 
@@ -29,6 +30,19 @@ body::-webkit-scrollbar-thumb {
 main {
     margin-left: 5rem;
     padding: 1rem;
+}
+
+a:link{
+    color: black
+}
+a:visited{
+    color:black
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: underline;
 }
 
 .navbar {
@@ -75,6 +89,8 @@ main {
 }
 
 .link-text {
+    visibility: hidden
+    transition: visibility var(--text-transition-speed);
     color: var(--text-primary);
     display: none;
     margin-left: 1rem;
